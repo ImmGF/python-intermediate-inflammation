@@ -23,3 +23,19 @@ def visualize(data_dict):
     fig.tight_layout()
 
     plt.show()
+
+
+def textualize(statistics_dict):
+    """Generate a textual representation of statistics
+
+    :param data_dict: Dictionary of statistics -> data to present as text
+    """
+
+    Statistics_text = ""
+
+    for key in statistics_dict:
+        Statistics_text += ("{} value for the data is {}. ".format(key,statistics_dict[key]))
+
+    print(Statistics_text)
+
+    return(Statistics_text)
